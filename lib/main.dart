@@ -35,8 +35,8 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       home: isFoo ? _foo() : _bar(),
-//      home: isFoo ? Foo() : Bar(),
+       // home: isFoo ? _foo() : _bar(),
+      home: isFoo ? Foo() : Bar(),
     );
   }
 }
