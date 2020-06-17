@@ -35,8 +35,8 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: isFoo ? _foo() : _bar(),
-      home: isFoo ? Foo() : Bar(),
+       home: isFoo ? _foo() : _bar(),
+//      home: isFoo ? Foo() : Bar(),
     );
   }
 }
@@ -66,6 +66,7 @@ class SettingDrawer extends StatelessWidget {
         onPressed: () {
           MyAppState state = context.findAncestorStateOfType<MyAppState>();
           state.toggleFooBar();
+          // Navigator.pop(context);
         },
       ),
     );
